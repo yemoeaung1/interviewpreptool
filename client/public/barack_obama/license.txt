@@ -1,0 +1,11 @@
+Model Information:
+* title:	Barack Obama
+* source:	https://sketchfab.com/3d-models/barack-obama-5d5ac87075274f34abfaba4b36e584d4
+* author:	Gaby Vaillancourt (https://sketchfab.com/gabyvaillancourt)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Barack Obama" (https://sketchfab.com/3d-models/barack-obama-5d5ac87075274f34abfaba4b36e584d4) by Gaby Vaillancourt (https://sketchfab.com/gabyvaillancourt) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)

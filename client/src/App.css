@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .glass {
+  backdrop-filter: blur(var(--glass-blur, 40px));
+    background-color: transparent;
+    background-image: linear-gradient(135deg, rgb(255 255 255 / var(--glass-opacity, 30%)), #0000), linear-gradient(var(--glass-reflex-degree, 100deg), rgb(255 255 255 / var(--glass-reflex-opacity, 10%)) 25%, rgb(0 0 0 / 0%) 25%);
+} */
+
+
+@keyframes waveDisappearX {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.wave-disappear-textX {
+  display: inline-block;
+  animation: waveDisappearX 4s infinite;
+}
+
+.with-arrow {
+  background-image: url('https://th.bing.com/th/id/R.0673093bbfcecc10fc43a2e61243415c?rik=1pH9V0jCRyiRdQ&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2farrow-image-transparent%2farrow-image-transparent-9.png&ehk=tGpJQDxnJ%2bq7S2HVaT2wMHWwaLHTtpQ%2b%2baxiZvotuvY%3d&risl=&pid=ImgRaw&r=0'); /* Replace 'arrow.png' with your arrow image */
+  background-repeat: no-repeat;
+}@keyframes glowFade {
+  0%{
+    background-position: -200% 0;
+  }
+  100%{
+    background-position: 200% 0;
+  }
+}
+
+.bg-glow {
+  animation: glowFade 4s infinite;
+  background: linear-gradient(to right, #333, #666, #333); /* Gradient from dark gray to medium gray and back */
+  background-size: 200% 100%; /* Double the width to cover the entire element */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.bg-pulsating-gradient {
+  animation: pulse 3s infinite;
+  background-image: linear-gradient(to right, #4F46E5, #EC4899, #FFA657);
+}
+
+.bg-pulsating-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-size: 200% 100%;
+  background-position: 100% 50%;
+  animation: pulse 3s infinite;
+}
+
+@keyframes glow {
+  0%, 70% {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  71%, 100% {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5);
+    background-color: rgba(255, 255, 0, 0.7);
+  }
+}
+.glow-effect {
+  animation: glow 2.5s 10;
+}
+
+@keyframes bloom {
+  0%, 20% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.5);
+    background-color: transparent;
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5);
+    background-color: rgba(255, 255, 0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.5);
+    background-color: transparent;
+  }
+}
+.bloom-effect {
+  animation: bloom 2s 10;
+}
