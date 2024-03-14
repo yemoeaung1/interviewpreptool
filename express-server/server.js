@@ -138,7 +138,7 @@ app.post('/questions/generate', async (req, res) => {
     }
     });
 
-app.post('/questions/clear', async (req, res) => {
+app.get('/questions/clear', async (req, res) => {
     try{
         await Questions.deleteMany({});
         res.send("Success");
